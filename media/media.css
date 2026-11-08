@@ -1,0 +1,130 @@
+@media screen and (min-width: 576px) {
+}
+@media screen and (min-width: 768px) {
+  .container-nav {
+    display: flex;
+    align-items: center;
+  }
+  .logo-title {
+    width: fit-content;
+  }
+  .container-nav .profile {
+    margin-right: auto;
+  }
+  .container-nav .profile .left-side .img-profile p {
+    display: block;
+  }
+}
+@media screen and (min-width: 992px) {
+  nav .logo-title .title,
+  nav .side-title h2,
+  nav h3,
+  nav .side-list-item h4 {
+    display: none;
+  }
+  nav {
+    width: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-shrink: 0;
+    justify-content: space-between;
+  }
+
+  .main {
+    width: calc(100% - 80px);
+    min-width: 0;
+  }
+  body {
+    display: flex;
+    justify-content: center;
+  }
+  .first-section,
+  .second-section,
+  .third-section,
+  .forth-section {
+    display: flex;
+    gap: 10px;
+    width: 90%;
+    justify-content: center;
+    align-items: center;
+    margin: 15px auto;
+  }
+  .first-section > .container {
+    width: calc((100% - 24px) / 3);
+  }
+
+  .second-section > section {
+    min-height: 350px;
+  }
+  .third-section .container-bills,
+  .third-section .container-budget {
+    min-height: 450px;
+  }
+  .forth-section {
+    align-items: start;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .first-section .container .content h2 {
+    font-size: 40px;
+  }
+}
+@media screen and (min-width: 1400px) {
+  nav .logo-title .title,
+  nav .side-title h2,
+  nav h3,
+  nav .side-list-item h4 {
+    display: block;
+  }
+  nav {
+    width: 20%;
+    display: block;
+    flex-shrink: 0;
+  }
+  .main {
+    margin-right: 20%;
+  }
+  .big-screen {
+    display: flex;
+    margin: 0 20px;
+  }
+  .big-screen .second-section {
+    display: block;
+  }
+  .big-screen > section {
+    min-height: 750px;
+  }
+  .footer-big-screen {
+    display: flex;
+    gap: 10px;
+    margin: 0 20px;
+  }
+  .footer-big-screen .third-section {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    order: 2;
+  }
+  .footer-big-screen .forth-section {
+    display: contents;
+  }
+  .forth-section .container-budget-2 {
+    order: 1;
+  }
+
+  .forth-section > .container-pay {
+    order: 3;
+  }
+  .footer-big-screen > .third-section,
+  .footer-big-screen > .forth-section,
+  .footer-big-screen .container-budget-2,
+  .footer-big-screen .container-pay {
+    flex: 1 1 30%;
+    height: fit-content;
+  }
+    .footer-big-screen .container-budget-2{
+      height:800px ;
+    }
+  
+}
